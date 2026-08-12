@@ -1,0 +1,161 @@
+*{
+    padding: o;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: poppins;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    padding: 4%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+
+    ul{
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.1);
+        gap: 24px;
+        padding: 16px 20px;
+        border-radius: 12px;
+        list-style-type: none;
+        backdrop-filter: blur(20px);
+    }
+
+}
+
+.logotipo{
+    width: 60px;
+}
+
+button{
+    font-family: poppins;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    opacity: .8;
+    transition: all .3s;
+}
+
+button:hover{
+    opacity: 1;
+}
+
+p{
+    opacity: .7;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+}
+
+.secao1{
+    background-image: url("assets/background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+    h2{
+        font-size: 14vw;
+        color: rgb(119, 119, 119);
+        mix-blend-mode: color-dodge;
+    }
+}
+
+.conteudoPrincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1{
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .divBotoes{
+        display: flex;
+        flex-direction: row;
+        margin-top: 5%;
+    }
+
+    .botaoPrimario{
+        background-color: rgba(255, 255, 255, 0.944);
+        gap: 12px;
+        padding: 6px 6px 6px 16px;
+        /* color: white; */
+        img{
+            width: 44px;
+        }
+    }
+
+    .botaoSecundario{
+        padding: 12px;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+    }
+}
+
+.tituloSecao{
+    font-size: 52px;
+    font-weight: 500;
+}
+
+.secao2{
+    align-items: center;
+    background-image: url("assets/background.jpg");
+}
+
+.divCards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px 40px 0 120px;
+}
+
+.card{
+    width: 32%;
+    padding: 32px 20px;
+
+    h3{
+        font-size: 24px;
+        font-weight: 500;
+        margin: 20px 0px 4px;
+    }
+}
+
+.branco{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+
+.divImagens{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0 80px;
+    gap: .8%;
+
+    img{
+        width: 24.5%;
+        filter: saturate(0);
+        &:hover{
+            filter: saturate(1);
+        }
+    }
+}
